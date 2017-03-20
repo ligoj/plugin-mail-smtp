@@ -1,0 +1,5 @@
+id;owner.id;name;data;type
+service:mail:smtp:username;service:mail:smtp;Username;user;TEXT
+service:mail:smtp:password;service:mail:smtp;Password;secret;TEXT
+service:mail:smtp:port;service:mail:smtp;Port;25;INTEGER
+service:mail:smtp:host;service:mail:smtp;localhost;user;TEXT
