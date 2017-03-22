@@ -46,7 +46,7 @@ public class SmtpPluginResourceTest extends AbstractJpaTest {
 
 	@Before
 	@After
-	public void cleanCache() throws IOException {
+	public void cleanCache() {
 		CacheManager.getInstance().getCache("plugin-data").removeAll();
 	}
 
