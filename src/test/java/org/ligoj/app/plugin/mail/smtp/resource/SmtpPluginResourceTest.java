@@ -11,7 +11,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.ligoj.app.AbstractJpaTest;
+import org.ligoj.app.AbstractAppTest;
 import org.ligoj.app.model.Node;
 import org.ligoj.app.model.Parameter;
 import org.ligoj.app.model.ParameterValue;
@@ -34,7 +34,7 @@ import net.sf.ehcache.CacheManager;
 @ContextConfiguration(locations = "classpath:/META-INF/spring/application-context-test.xml")
 @Rollback
 @Transactional
-public class SmtpPluginResourceTest extends AbstractJpaTest {
+public class SmtpPluginResourceTest extends AbstractAppTest {
 
 	@Autowired
 	private SmtpPluginResource resource;
