@@ -15,7 +15,6 @@ import org.ligoj.app.AbstractAppTest;
 import org.ligoj.app.model.Node;
 import org.ligoj.app.model.Parameter;
 import org.ligoj.app.model.ParameterValue;
-import org.ligoj.bootstrap.model.system.SystemConfiguration;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -41,7 +40,7 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 
 	@Before
 	public void prepareConfiguration() throws IOException {
-		persistEntities("csv/app-test", SystemConfiguration.class, Node.class, Parameter.class, ParameterValue.class);
+		persistEntities("csv/app-test", Node.class, Parameter.class, ParameterValue.class);
 	}
 
 	@Before
