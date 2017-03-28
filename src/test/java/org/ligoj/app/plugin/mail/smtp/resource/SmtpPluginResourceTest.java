@@ -40,7 +40,7 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 
 	@Before
 	public void prepareConfiguration() throws IOException {
-		persistEntities("csv/app-test", Node.class, Parameter.class, ParameterValue.class);
+		persistEntities("csv", Node.class, Parameter.class, ParameterValue.class);
 	}
 
 	@Before

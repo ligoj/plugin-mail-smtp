@@ -1,0 +1,3 @@
+id;name;refined.id;mode
+service:mail;Mail;;LINK
+service:mail:smtp;SMTP;service:mail;LINK

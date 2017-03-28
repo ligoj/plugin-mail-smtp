@@ -1,5 +1,0 @@
-id;owner.id;data;type
-service:mail:smtp:username;service:mail:smtp;user;TEXT
-service:mail:smtp:password;service:mail:smtp;secret;TEXT
-service:mail:smtp:port;service:mail:smtp;25;INTEGER
-service:mail:smtp:host;service:mail:smtp;user;TEXT

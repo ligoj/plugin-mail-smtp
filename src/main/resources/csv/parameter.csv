@@ -1,0 +1,5 @@
+id;owner.id;data;mandatory;type;mode;secured
+service:mail:smtp:host;;true;;false;TEXT;service:mail:smtp
+service:mail:smtp:password;;true;;true;TEXT;service:mail:smtp
+service:mail:smtp:port;{min:1};true;;false;INTEGER;service:mail:smtp
+service:mail:smtp:username;;true;;false;TEXT;service:mail:smtp
