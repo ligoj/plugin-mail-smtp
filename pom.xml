@@ -1,10 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
 		<version>1.0.1-SNAPSHOT</version>
-		<relativePath/>
+		<relativePath />
 	</parent>
 
 	<groupId>org.ligoj.plugin</groupId>
@@ -14,8 +15,19 @@
 	<name>Ligoj - Plugin Mail SMTP</name>
 
 	<properties>
-			<mail.version>1.5.6</mail.version>
+		<mail.version>1.5.6</mail.version>
 	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<!-- JSR-925 -->
+			<dependency>
+				<groupId>javax.activation</groupId>
+				<artifactId>activation</artifactId>
+				<version>1.1.1</version>
+				<scope>runtime</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<dependencies>
 
 		<!-- JSR-919 -->
@@ -23,14 +35,6 @@
 			<groupId>com.sun.mail</groupId>
 			<artifactId>javax.mail</artifactId>
 			<version>${mail.version}</version>
-		</dependency>
-
-		<!-- JSR-925 -->
-		<dependency>
-			<groupId>javax.activation</groupId>
-			<artifactId>activation</artifactId>
-			<version>1.1.1</version>
-			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 </project>
