@@ -55,14 +55,21 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	 */
 	public static final String PARAMETER_PORT = KEY + ":port";
 
+	@Autowired
+	protected ApplicationContext applicationContext;
+
 	@Override
 	public String getKey() {
 		return KEY;
 	}
 
-	@Autowired
-	protected ApplicationContext applicationContext;
-
+	/**
+	 * Return the {@link JavaMailSender} built from the given node.
+	 * 
+	 * @param node
+	 *            The node holding the SMTP configuration.
+	 * @return the {@link JavaMailSender} built from the given node.
+	 */
 	@CacheResult(cacheName = "plugin-data")
 	public JavaMailSender getMailSender(@CacheKey final String node) {
 		final JavaMailSenderImpl mail = new JavaMailSenderImpl();
@@ -92,18 +99,6 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	@Override
 	public void link(int subscription) {
 		throw new NotImplementedException("");
-	}
-
-	@Override
-	public String getVersion(Map<String, String> parameters) {
-		// Not relevant
-		return null;
-	}
-
-	@Override
-	public String getLastVersion() {
-		// Not relevant
-		return null;
 	}
 
 	@Override
