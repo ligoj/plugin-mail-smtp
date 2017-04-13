@@ -8,7 +8,6 @@ import javax.cache.annotation.CacheKey;
 import javax.cache.annotation.CacheResult;
 
 import org.apache.commons.lang3.NotImplementedException;
-import org.ligoj.app.api.SubscriptionStatusWithData;
 import org.ligoj.app.plugin.mail.resource.MailResource;
 import org.ligoj.app.plugin.mail.resource.MailServicePlugin;
 import org.ligoj.app.resource.plugin.AbstractToolPluginResource;
@@ -99,18 +98,6 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	@Override
 	public void link(int subscription) {
 		throw new NotImplementedException("");
-	}
-
-	@Override
-	public boolean checkStatus(String node, Map<String, String> parameters) {
-		// unable to check the node for now
-		return true;
-	}
-
-	@Override
-	public SubscriptionStatusWithData checkSubscriptionStatus(String node, Map<String, String> parameters) {
-		// unable to check the subscription for now
-		return null;
 	}
 
 }
