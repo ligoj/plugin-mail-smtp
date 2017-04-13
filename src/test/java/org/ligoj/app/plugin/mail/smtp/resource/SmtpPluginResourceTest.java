@@ -93,7 +93,7 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 	}
 
 	@Test
-	public void checkStatus() {
+	public void checkStatus() throws Exception {
 		Assert.assertTrue(resource.checkStatus(null, null));
 	}
 
