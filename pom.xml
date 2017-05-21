@@ -18,6 +18,12 @@
 		<mail.version>1.5.6</mail.version>
 	</properties>
 
+	<scm>
+		<connection>scm:git:https://github.com/ligoj/plugin-mail-smtp</connection>
+		<developerConnection>scm:git:https://github.com/ligoj/plugin-mail-smtp</developerConnection>
+		<url>https://github.com/ligoj/plugin-mail-smtp.git</url>
+	</scm>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.ligoj.plugin</groupId>
