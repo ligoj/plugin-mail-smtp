@@ -1,2 +1,2 @@
 id;name;refined.id;mode;tagUiClasses;tag;uiClasses
-service:mail:smtp;SMTP;service:mail;LINK;fa fa-suitcase;functional;fa fa-envelope
+service:mail:smtp;SMTP;service:mail;NONE;fa fa-suitcase;functional;fa fa-envelope

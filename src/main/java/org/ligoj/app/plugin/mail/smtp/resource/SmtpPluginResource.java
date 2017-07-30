@@ -72,7 +72,7 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	@CacheResult(cacheName = "plugin-data")
 	public JavaMailSender getMailSender(@CacheKey final String node) {
 		final JavaMailSenderImpl mail = new JavaMailSenderImpl();
-		final Map<String, String> parameters = nodeResource.getParametersAsMap(node);
+		final Map<String, String> parameters = pvResource.getNodeParameters(node);
 		mail.setUsername(parameters.get(PARAMETER_USER));
 		mail.setPassword(parameters.get(PARAMETER_PASSWORD));
 		mail.setHost(parameters.get(PARAMETER_HOST));

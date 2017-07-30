@@ -1,5 +1,5 @@
 id;data;mandatory;secured;type;owner.id
 service:mail:smtp:host;;true;false;TEXT;service:mail:smtp
 service:mail:smtp:password;;true;true;TEXT;service:mail:smtp
-service:mail:smtp:port;{min:1};true;false;INTEGER;service:mail:smtp
+service:mail:smtp:port;{"min":1};true;false;INTEGER;service:mail:smtp
 service:mail:smtp:username;;true;false;TEXT;service:mail:smtp
