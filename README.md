@@ -4,7 +4,7 @@
 [![Build Status](https://circleci.com/gh/ligoj/plugin-mail-smtp.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-mail-smtp)
 [![Build Status](https://codeship.com/projects/9f202640-0032-0135-2257-76737245ebb2/status?branch=master)](https://codeship.com/projects/212489)
 [![Build Status](https://semaphoreci.com/api/v1/ligoj/plugin-mail-smtp/branches/master/shields_badge.svg)](https://semaphoreci.com/ligoj/plugin-mail-smtp)
-[![Build Status](https://ci.appveyor.com/api/projects/status/hv9yv0h3mgx14ify/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-mail-smtp/branch/master)
+[![Build Status](https://ci.appveyor.com/api/projects/status/b8w5x9amppaxheso/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-mail-smtp/branch/master)
 [![Coverage Status](https://coveralls.io/repos/github/ligoj/plugin-mail-smtp/badge.svg?branch=master)](https://coveralls.io/github/ligoj/plugin-mail-smtp?branch=master)
 [![Dependency Status](https://www.versioneye.com/user/projects/58caeda8dcaf9e0041b5b978/badge.svg?style=flat)](https://www.versioneye.com/user/projects/58caeda8dcaf9e0041b5b978)
 [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=org.ligoj.plugin:plugin-mail-smtp)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-mail-smtp)
