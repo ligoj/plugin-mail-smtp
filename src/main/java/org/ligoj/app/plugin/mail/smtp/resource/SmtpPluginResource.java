@@ -4,9 +4,6 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Properties;
 
-import javax.cache.annotation.CacheKey;
-import javax.cache.annotation.CacheResult;
-
 import org.apache.commons.lang3.NotImplementedException;
 import org.ligoj.app.plugin.mail.resource.MailResource;
 import org.ligoj.app.plugin.mail.resource.MailServicePlugin;
@@ -74,8 +71,7 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	 *            The node holding the SMTP configuration.
 	 * @return the {@link JavaMailSender} built from the given node.
 	 */
-	@CacheResult(cacheName = "plugin-data")
-	public JavaMailSender getMailSender(@CacheKey final String node) {
+	public JavaMailSender getMailSender(final String node) {
 		final JavaMailSenderImpl mail = new JavaMailSenderImpl();
 		final Map<String, String> parameters = pvResource.getNodeParameters(node);
 		mail.setUsername(parameters.get(PARAMETER_USER));
