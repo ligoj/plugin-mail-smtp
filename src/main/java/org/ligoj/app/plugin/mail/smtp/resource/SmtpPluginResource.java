@@ -11,6 +11,7 @@ import org.apache.commons.lang3.NotImplementedException;
 import org.ligoj.app.plugin.mail.resource.MailResource;
 import org.ligoj.app.plugin.mail.resource.MailServicePlugin;
 import org.ligoj.app.resource.plugin.AbstractToolPluginResource;
+import org.ligoj.bootstrap.resource.system.configuration.ConfigurationResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -57,6 +58,10 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	@Autowired
 	protected ApplicationContext applicationContext;
 	
+	@Autowired
+	private ConfigurationResource configuration;
+	
+
 	@Override
 	public String getKey() {
 		return KEY;
@@ -84,6 +89,7 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 		properties.put("mail.smtp.starttls.enable", Boolean.TRUE);
 		properties.put("mail.smtp.quitwait", Boolean.FALSE);
 		properties.put("mail.smtp.socketFactory.fallback", Boolean.FALSE);
+		properties.put("mail.smtp.connectiontimeout",configuration.get("plugin:mail:smtp:timeout", 3000));
 
 		mail.setJavaMailProperties(properties);
 		return mail;
