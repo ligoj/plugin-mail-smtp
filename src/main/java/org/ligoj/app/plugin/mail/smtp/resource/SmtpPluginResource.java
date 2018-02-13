@@ -56,7 +56,7 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 
 	@Autowired
 	protected ApplicationContext applicationContext;
-
+	
 	@Override
 	public String getKey() {
 		return KEY;
@@ -76,7 +76,7 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 		mail.setUsername(parameters.get(PARAMETER_USER));
 		mail.setPassword(parameters.get(PARAMETER_PASSWORD));
 		mail.setHost(parameters.get(PARAMETER_HOST));
-		mail.setPort(Optional.ofNullable(parameters.get(PARAMETER_PORT)).map(Integer::valueOf).orElse(125));
+		mail.setPort(Optional.ofNullable(parameters.get(PARAMETER_PORT)).map(Integer::valueOf).orElse(25));
 		mail.setDefaultEncoding("UTF-8");
 
 		final Properties properties = new Properties();
