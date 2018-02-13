@@ -27,7 +27,7 @@
 			<version>[1.0.0,1.1.0)</version>
 		</dependency>
 		
-		<!-- JSR-919 Remove with API 1.1.5 -->
+		<!-- JSR-919 -->
 		<dependency>
 			<groupId>com.sun.mail</groupId>
 			<artifactId>javax.mail</artifactId>
