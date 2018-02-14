@@ -100,7 +100,7 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 
 	@Test
 	public void checkSubscriptionStatus() throws Exception {
-		Assertions.assertNull(resource.checkSubscriptionStatus(null, null));
+		Assertions.assertNotNull(resource.checkSubscriptionStatus(null, null));
 	}
 
 }
