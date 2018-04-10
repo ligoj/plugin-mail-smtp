@@ -24,8 +24,6 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import net.sf.ehcache.CacheManager;
-
 /**
  * Test of {@link SmtpPluginResource}
  */
@@ -46,7 +44,7 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 	@BeforeEach
 	@AfterEach
 	public void cleanCache() {
-		CacheManager.getInstance().getCache("plugin-data").removeAll();
+		clearAllCache();
 	}
 
 	@Test
