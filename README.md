@@ -9,7 +9,7 @@
 [![Quality Gate](https://sonarcloud.io/api/badges/gate?key=org.ligoj.plugin:plugin-mail-smtp)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-mail-smtp)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/45e84bd7af4b4adb8cd8fa908a397e97)](https://www.codacy.com/app/ligoj/plugin-mail-smtp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ligoj/plugin-mail-smtp&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/ligoj/plugin-mail-smtp/badge)](https://www.codefactor.io/repository/github/ligoj/plugin-mail-smtp)
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://gus.mit-license.org/)
+[![License](http://img.shields.io/:license-mit-blue.svg)](http://fabdouglas.mit-license.org/)
 
 [Ligoj](https://github.com/ligoj/ligoj) SMTP Mail plugin, and extending [Mail plugin](https://github.com/ligoj/plugin-mail)
 Provides the following features :
