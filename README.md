@@ -4,7 +4,7 @@
 [![Build Status](https://circleci.com/gh/ligoj/plugin-mail-smtp.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-mail-smtp)
 [![Build Status](https://semaphoreci.com/api/v1/ligoj/plugin-mail-smtp/branches/master/shields_badge.svg)](https://semaphoreci.com/ligoj/plugin-mail-smtp)
 [![Build Status](https://ci.appveyor.com/api/projects/status/b8w5x9amppaxheso/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-mail-smtp/branch/master)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3plugin-mail-smtp&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=org.ligoj.plugin%3plugin-mail-smtp)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-mail-smtp&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-mail-smtp)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?metric=alert_status&project=org.ligoj.plugin:plugin-mail-smtp)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-mail-smtp)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/45e84bd7af4b4adb8cd8fa908a397e97)](https://www.codacy.com/app/ligoj/plugin-mail-smtp?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ligoj/plugin-mail-smtp&amp;utm_campaign=Badge_Grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/ligoj/plugin-mail-smtp/badge)](https://www.codefactor.io/repository/github/ligoj/plugin-mail-smtp)
