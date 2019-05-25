@@ -31,29 +31,29 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @ContextConfiguration(locations = "classpath:/META-INF/spring/application-context-test.xml")
 @Rollback
 @Transactional
-public class SmtpPluginResourceTest extends AbstractAppTest {
+class SmtpPluginResourceTest extends AbstractAppTest {
 
 	@Autowired
 	private SmtpPluginResource resource;
 
 	@BeforeEach
-	public void prepareConfiguration() throws IOException {
+	void prepareConfiguration() throws IOException {
 		persistEntities("csv", Node.class, Parameter.class, ParameterValue.class);
 	}
 
 	@BeforeEach
 	@AfterEach
-	public void cleanCache() {
+	void cleanCache() {
 		clearAllCache();
 	}
 
 	@Test
-	public void getKey() {
+	void getKey() {
 		Assertions.assertEquals("service:mail:smtp", resource.getKey());
 	}
 
 	@Test
-	public void getMailSender() {
+	void getMailSender() {
 		final JavaMailSenderImpl mailSender = (JavaMailSenderImpl) resource.getMailSender("service:mail:smtp:local");
 		Assertions.assertEquals("localhost", mailSender.getHost());
 		Assertions.assertEquals("user", mailSender.getUsername());
@@ -63,7 +63,7 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 	}
 
 	@Test
-	public void send() {
+	void send() {
 		final SmtpPluginResource resource = new SmtpPluginResource();
 		applicationContext.getAutowireCapableBeanFactory().autowireBean(resource);
 		resource.applicationContext = Mockito.mock(ApplicationContext.class);
@@ -75,29 +75,29 @@ public class SmtpPluginResourceTest extends AbstractAppTest {
 	}
 
 	@Test
-	public void link() {
+	void link() {
 		Assertions.assertThrows(NotImplementedException.class, () -> {
 			resource.link(0);
 		});
 	}
 
 	@Test
-	public void getVersion() throws Exception {
+	void getVersion() throws Exception {
 		Assertions.assertNull(resource.getVersion(Collections.emptyMap()));
 	}
 
 	@Test
-	public void getLastVersion() throws Exception {
+	void getLastVersion() throws Exception {
 		Assertions.assertNull(resource.getLastVersion());
 	}
 
 	@Test
-	public void checkStatus() throws Exception {
+	void checkStatus() throws Exception {
 		Assertions.assertTrue(resource.checkStatus(null, null));
 	}
 
 	@Test
-	public void checkSubscriptionStatus() throws Exception {
+	void checkSubscriptionStatus() throws Exception {
 		Assertions.assertNotNull(resource.checkSubscriptionStatus(null, null));
 	}
 
