@@ -2,7 +2,6 @@
 
 [![Build Status](https://travis-ci.org/ligoj/plugin-mail-smtp.svg?branch=master)](https://travis-ci.org/ligoj/plugin-mail-smtp)
 [![Build Status](https://circleci.com/gh/ligoj/plugin-mail-smtp.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-mail-smtp)
-[![Build Status](https://semaphoreci.com/api/v1/ligoj/plugin-mail-smtp/branches/master/shields_badge.svg)](https://semaphoreci.com/ligoj/plugin-mail-smtp)
 [![Build Status](https://ci.appveyor.com/api/projects/status/b8w5x9amppaxheso/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-mail-smtp/branch/master)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-mail-smtp&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-mail-smtp)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?metric=alert_status&project=org.ligoj.plugin:plugin-mail-smtp)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-mail-smtp)
