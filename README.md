@@ -1,6 +1,6 @@
 # :link: Ligoj Mail STMP plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-mail-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-mail-smtp)
 
-[![Build Status](https://travis-ci.org/ligoj/plugin-mail-smtp.svg?branch=master)](https://travis-ci.org/ligoj/plugin-mail-smtp)
+[![Build Status](https://travis-ci.com/ligoj/plugin-mail-smtp.svg?branch=master)](https://travis-ci.com/ligoj/plugin-mail-smtp)
 [![Build Status](https://circleci.com/gh/ligoj/plugin-mail-smtp.svg?style=svg)](https://circleci.com/gh/ligoj/plugin-mail-smtp)
 [![Build Status](https://ci.appveyor.com/api/projects/status/b8w5x9amppaxheso/branch/master?svg=true)](https://ci.appveyor.com/project/ligoj/plugin-mail-smtp/branch/master)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-mail-smtp&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-mail-smtp)
