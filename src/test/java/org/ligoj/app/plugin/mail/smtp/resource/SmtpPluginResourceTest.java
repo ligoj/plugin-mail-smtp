@@ -3,7 +3,7 @@ package org.ligoj.app.plugin.mail.smtp.resource;
 import java.io.IOException;
 import java.util.Collections;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 
 import org.apache.commons.lang3.NotImplementedException;
 import org.junit.jupiter.api.AfterEach;
