@@ -1,4 +1,4 @@
-# :link: Ligoj Mail STMP plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-mail-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-mail-smtp)
+# :link: Ligoj Mail SMTP plugin [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-mail-smtp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-mail-smtp)
 
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=org.ligoj.plugin%3Aplugin-mail-smtp&metric=coverage)](https://sonarcloud.io/dashboard?id=org.ligoj.plugin%3Aplugin-mail-smtp)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?metric=alert_status&project=org.ligoj.plugin:plugin-mail-smtp)](https://sonarcloud.io/dashboard/index/org.ligoj.plugin:plugin-mail-smtp)
