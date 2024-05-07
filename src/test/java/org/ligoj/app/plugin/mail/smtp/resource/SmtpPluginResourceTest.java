@@ -76,9 +76,7 @@ class SmtpPluginResourceTest extends AbstractAppTest {
 
 	@Test
 	void link() {
-		Assertions.assertThrows(NotImplementedException.class, () -> {
-			resource.link(0);
-		});
+		Assertions.assertThrows(NotImplementedException.class, () -> resource.link(0));
 	}
 
 	@Test
