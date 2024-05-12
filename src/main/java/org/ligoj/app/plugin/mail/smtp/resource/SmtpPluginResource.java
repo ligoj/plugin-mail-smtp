@@ -1,20 +1,18 @@
 package org.ligoj.app.plugin.mail.smtp.resource;
 
-import java.util.Map;
-import java.util.Optional;
-import java.util.Properties;
-
 import org.apache.commons.lang3.NotImplementedException;
 import org.ligoj.app.plugin.mail.resource.MailResource;
 import org.ligoj.app.plugin.mail.resource.MailServicePlugin;
 import org.ligoj.app.resource.plugin.AbstractToolPluginResource;
-import org.ligoj.bootstrap.resource.system.configuration.ConfigurationResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.stereotype.Component;
+
+import java.util.Optional;
+import java.util.Properties;
 
 /**
  * Features of mail implementations.
@@ -55,10 +53,6 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	@Autowired
 	protected ApplicationContext applicationContext;
 	
-	@Autowired
-	private ConfigurationResource configuration;
-	
-
 	@Override
 	public String getKey() {
 		return KEY;
@@ -72,15 +66,15 @@ public class SmtpPluginResource extends AbstractToolPluginResource implements Ma
 	 * @return the {@link JavaMailSender} built from the given node.
 	 */
 	public JavaMailSender getMailSender(final String node) {
-		final JavaMailSenderImpl mail = new JavaMailSenderImpl();
-		final Map<String, String> parameters = pvResource.getNodeParameters(node);
+		final var mail = new JavaMailSenderImpl();
+		final var parameters = pvResource.getNodeParameters(node);
 		mail.setUsername(parameters.get(PARAMETER_USER));
 		mail.setPassword(parameters.get(PARAMETER_PASSWORD));
 		mail.setHost(parameters.get(PARAMETER_HOST));
 		mail.setPort(Optional.ofNullable(parameters.get(PARAMETER_PORT)).map(Integer::valueOf).orElse(25));
 		mail.setDefaultEncoding("UTF-8");
 
-		final Properties properties = new Properties();
+		final var properties = new Properties();
 		properties.put("mail.smtp.auth", Boolean.TRUE);
 		properties.put("mail.smtp.starttls.enable", Boolean.TRUE);
 		properties.put("mail.smtp.quitwait", Boolean.FALSE);
