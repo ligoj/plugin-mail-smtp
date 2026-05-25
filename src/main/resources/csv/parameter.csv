@@ -1,5 +1,5 @@
-id;data;mandatory;secured;type;owner.id
-service:mail:smtp:host;;true;false;TEXT;service:mail:smtp
-service:mail:smtp:password;;true;true;TEXT;service:mail:smtp
-service:mail:smtp:port;{"min":1};true;false;INTEGER;service:mail:smtp
-service:mail:smtp:username;;true;false;TEXT;service:mail:smtp
+id;data;mandatory;secured;type;owner.id;defaultValue;availableForSubscription;availableForNode
+service:mail:smtp:host;;TRUE;FALSE;TEXT;service:mail:smtp;localhost;FALSE;
+service:mail:smtp:password;;TRUE;TRUE;TEXT;service:mail:smtp;;FALSE;
+service:mail:smtp:port;"{""min"":1}";TRUE;FALSE;INTEGER;service:mail:smtp;25;FALSE;
+service:mail:smtp:username;;TRUE;FALSE;TEXT;service:mail:smtp;;FALSE;
