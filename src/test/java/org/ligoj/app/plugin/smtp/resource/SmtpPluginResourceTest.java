@@ -1,4 +1,4 @@
-package org.ligoj.app.plugin.mail.smtp.resource;
+package org.ligoj.app.plugin.smtp.resource;
 
 import java.io.IOException;
 import java.util.Collections;

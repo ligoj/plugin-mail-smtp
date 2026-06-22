@@ -1,4 +1,4 @@
-package org.ligoj.app.plugin.mail.smtp.resource;
+package org.ligoj.app.plugin.smtp.resource;
 
 import org.apache.commons.lang3.NotImplementedException;
 import org.ligoj.app.plugin.mail.resource.MailResource;
