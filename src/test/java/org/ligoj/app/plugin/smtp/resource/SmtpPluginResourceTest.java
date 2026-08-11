@@ -1,10 +1,6 @@
 package org.ligoj.app.plugin.smtp.resource;
 
-import java.io.IOException;
-import java.util.Collections;
-
 import jakarta.transaction.Transactional;
-
 import org.apache.commons.lang3.NotImplementedException;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
@@ -15,7 +11,6 @@ import org.ligoj.app.AbstractAppTest;
 import org.ligoj.app.model.Node;
 import org.ligoj.app.model.Parameter;
 import org.ligoj.app.model.ParameterValue;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
@@ -23,6 +18,12 @@ import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import java.io.IOException;
+import java.util.Collections;
+
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * Test of {@link SmtpPluginResource}
@@ -66,11 +67,11 @@ class SmtpPluginResourceTest extends AbstractAppTest {
 	void send() {
 		final SmtpPluginResource resource = new SmtpPluginResource();
 		applicationContext.getAutowireCapableBeanFactory().autowireBean(resource);
-		resource.applicationContext = Mockito.mock(ApplicationContext.class);
-		final SmtpPluginResource mockPLugin = Mockito.mock(SmtpPluginResource.class);
-		Mockito.when(mockPLugin.getMailSender("service:mail:smtp:local")).thenReturn(Mockito.mock(JavaMailSenderImpl.class));
-		Mockito.when(resource.applicationContext.getBean(SmtpPluginResource.class)).thenReturn(mockPLugin);
-		final MimeMessagePreparator messagePreparator = Mockito.mock(MimeMessagePreparator.class);
+		resource.applicationContext = mock(ApplicationContext.class);
+		final SmtpPluginResource mockPLugin = mock(SmtpPluginResource.class);
+		when(mockPLugin.getMailSender("service:mail:smtp:local")).thenReturn(mock(JavaMailSenderImpl.class));
+		when(resource.applicationContext.getBean(SmtpPluginResource.class)).thenReturn(mockPLugin);
+		final MimeMessagePreparator messagePreparator = mock(MimeMessagePreparator.class);
 		Assertions.assertEquals(messagePreparator, resource.send("service:mail:smtp:local", messagePreparator));
 	}
 
